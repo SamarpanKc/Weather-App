@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif+Telugu:wght@100..900&display=swap');
+
+*{
+    motion: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FF7A7A; 
+
+    overflow: hidden;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 55vw;
+    height: 95vh;
+    /* background-color: rgba(0, 255, 255, 0.176);   */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container .searchBar{
+    width: 30vw;
+    height: 7vh;
+    background-color: #F5F5F5;
+    border-radius: 36px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 36px;
+}
+.container .searchBar #searchInput{
+    width: 80%;
+    padding: 12px 20px;
+    margin-left: 4px;
+    border: none;
+    border-radius: 36px;
+    outline: none;
+    font-size: 1rem;
+}
+.container .searchBar #searchBtn{
+    width: 18%;
+    height: 48px;
+    border-radius: 0px 36px 36px 0px;
+    border: none;
+    font-weight: 500;
+    cursor:pointer;
+    background-color: #F5F5F5;
+    font-size: 1rem;
+
+}
+.container .card{
+    width: 54vw;
+    height: 60vh;
+    background-color: #FCFCFC;
+    border-radius: 26px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.card .firstSec, .secondSec {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.card .firstSec .icon{
+    margin-left: 36px;
+    color: #FFCC33;
+}
+
+.card .firstSec h2{
+    font-size: 6rem;
+}
+.card .firstSec .location{
+    display: flex;
+}
+
+.card .firstSec .location img{
+    margin-right: 12px;
+}
+.card .firstSec .location p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-right: 36px;
+}
+
+.card .secondSec .wind, .humidity{
+    margin-top: 36px;
+    margin-left: 36px;
+    display: flex;
+    align-items: center;
+}
+.card .secondSec{
+    justify-content: space-around;
+}
+.wind img, .humidity img{
+    margin-right: 12px ;
+}
