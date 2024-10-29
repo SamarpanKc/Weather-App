@@ -111,8 +111,10 @@ body {
 
 .card .secondSec .wind,
 .humidity {
-    margin-top: 36px;
+    /* margin-top: 36px;
     margin-left: 36px;
+    margin-right: 36px; */
+    margin: 36px 36px 36px 36px;
     display: flex;
     align-items: center;
 }
@@ -133,54 +135,57 @@ body {
     }
 
     .container .searchBar {
-        width: 60vw;
+        width: 72vw;
+    }
+    .container .searchBar #searchBtn{
+        font-size: 1rem;
     }
 
     .container .card {
         width: 80vw;
-        height: auto;
+        height: 60vh;
         padding: 20px;
+        justify-content: space-around;
+    }
+    .card .firstSec{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card .firstSec .icon {
+        margin-left: 0;
+        margin-bottom: 20px;
+
+    }
+    .card .firstSec .icon img{
+        width: 120px;
+        height: 120px;
+    }
+    .card .firstSec .location{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
     }
 
     .card .firstSec h2 {
         font-size: 4rem;
+        margin-bottom: 12px;
     }
 
     .card .firstSec .location p {
         font-size: 1.2rem;
+        margin: 0;
     }
 
     .card .secondSec .wind,
     .humidity {
         margin: 20px 0;
+        align-items: center;
+    }
+    .card .secondSec .wind img,
+    .humidity img{
+        width: 20px;
+        height: 20px;
     }
 }
 
-@media (max-width: 480px) {
-    .container {
-        width: 90vw;
-    }
-
-    .container .searchBar {
-        width: 70vw;
-        height: 6vh;
-    }
-
-    .container .searchBar #searchInput {
-        font-size: 0.9rem;
-    }
-
-    .container .card {
-        width: 90vw;
-        height: auto;
-        padding: 16px;
-    }
-
-    .card .firstSec h2 {
-        font-size: 3rem;
-    }
-
-    .card .firstSec .location p {
-        font-size: 1rem;
-    }
-}
